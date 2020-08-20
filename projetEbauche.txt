@@ -1,0 +1,75 @@
+
+phase projet:
+	-analyse: 
+		-schéma: 
+			-use case
+			-uml
+			-diagramme d'état
+			-BPMN
+			-entité association
+			
+	-BD:
+		-création des tables
+		-créations des procédures
+		-script de remplissage de tables
+		-test de procédures
+	-Ado et linq:
+		-liaison de c# avec la base de donnée
+	-.net core (mvc)	
+	
+	-test de l'appli.
+	-debugage
+	
+	
+	
+projet:
+
+un site de gestion de location de bien insolite.
+
+type de personne: 
+	propriétaire: personne qui possède de bien
+	gestionnaire: peut etre gestionnaire commercial ou administratif
+	commercial: gestion de l'ajout de bien, appeler le prospect, envoyer un mail
+	administratif: gestion de la location , suivie du traitement
+	locataire:personne qui loue un bien, info sur l'avancement de ses locations
+
+-statut d'un bien:
+		créer, isOnligne,loue,libre, supprimé (attention, double usage du statut, réflichir à l'usage)
+
+fonctionnalité:
+-gestion d'un calendrier de réservation(envoi sur le gmail et ics a cliquer pour calendrier)
+-historique de réservation du bien
+-historique de réservation d'un locataire
+-liste des biens du propiétaire
+-liste des biens
+-liste des propiétaire
+-liste des locataires
+-commentaire/évaluations sur les biens , locataires, propiétaire
+-gestion d'une réservation
+-(traitement du paiement) 
+-(envoi de mail pour le suivi de l'avancement du dossier de réservation.)
+(garentie/assurance)
+-gestion de connexion
+-(liaison à trello ou faire la meme gestion en interne)
+-(chat bot) 
+-(convertir en app)
+-(traduction du site)	
+-adresse pas communiqué, transmise une fois le bien loué(payé).
+-locataire peut faire une demande de réservation qui serait vu par le gestionnaire administratif et définira s'il peut ou non loué le bien (seul s'il a la carte blanche du propriétaire , ou avec le propriétaire sinon)
+-commercial qui ajoute le bien, contacte des prospect(mail, téléphone), modifie le prix de location(promotion avec ou sans accord du propriétaire en fonction de carte blanche)
+-personne envoi un bien a validé(prospect) si validé (devient propriétaire).
+-commercial ajouter propriété. et transmette log au propriétaire
+-vue faq
+-vue équipe
+ 
+
+
+4 vue a préparer : gestionnaire(commercial ,administratif) , locataire, propriétaire
+
+
+premier pant : juste location 
+second pant: vente de bien 
+troisième pant : atelier pour apprendre à construire ce style de bien. 
+
+
+
